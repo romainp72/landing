@@ -1,0 +1,141 @@
+.container {
+  background-color: #fffff9;
+}
+
+.banner-container{
+  display: flex;
+  height: 400px;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://images.unsplash.com/photo-1455734729978-db1ae4f687fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banner-logo{  font-size: 100px;
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.banner-logo img {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.banner h1, .banner h2 {
+  margin: 0;
+  position: absolute;
+}
+
+.banner-logo h1{
+  top: 20px;
+  left: 30%;
+}
+
+.banner-logo h2{
+  font-size: 50px;
+  bottom: 55px;
+  left: 100px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  width: 1000px;
+  flex-direction:row;
+}
+
+.card{
+  display: flex;
+  width: 300px;
+  height: 370px;
+  flex-direction:column;
+  border: solid 1px rgb(206, 206, 206);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px lightgrey;
+  align-items: flex-start;
+  text-align: center;
+
+}
+
+.card img {
+  border-radius: 5px;
+  opacity: 0.6;
+}
+
+.card img:hover{
+  opacity: 0.9;
+}
+
+.card h3 {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.card p {
+  margin: 15px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  background-color: #F0E8C1;
+  height: 100px;
+}
+
+.footer-logo {
+  font-size: xx-small;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 100px;
+}
+.fab {
+  font-size: 50px;
+  color: #424040;
+}
+
+.fab:hover {
+  color: rgb(132, 202, 28);
+}
+
+.fas {
+  display: flex;
+  font-size: 30px;
+  color: #424040;
+  align-items:baseline;
+}
+
+.fa-globe{
+  animation: rotation 30s infinite;
+}
